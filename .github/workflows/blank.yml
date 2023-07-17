@@ -14,7 +14,13 @@ jobs:
 
     steps:
 
-      - name: Run a one-line script
+      - name: Show AZ version
         run: |
           az version
+          
+     # Install azure-cli
+      - uses: elstudio/action-install-azure-cli@v1          
 
+      - name: Show AZ version
+        run: |
+          az version
