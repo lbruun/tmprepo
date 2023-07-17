@@ -18,8 +18,9 @@ jobs:
         run: |
           az version
           
-     # Install azure-cli
-      - uses: elstudio/action-install-azure-cli@v1          
+      - name: Install Azure CLI
+        run: |
+           sudo apt-get install azure-cli=2.49.0-1~jammy
 
       - name: Show AZ version
         run: |
