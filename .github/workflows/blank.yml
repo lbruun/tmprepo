@@ -20,6 +20,7 @@ jobs:
           
       - name: Install Azure CLI
         run: |
+           apt-cache policy azure-cli
            sudo apt-get install azure-cli=2.49.0-1~jammy
 
       - name: Show AZ version
